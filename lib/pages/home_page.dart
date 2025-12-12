@@ -13,10 +13,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.white,
         title: const Text(
           "Tcon",
-          style: TextStyle(
-            fontSize: 26,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
         ),
         actions: [
           IconButton(
@@ -103,13 +100,13 @@ class HomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.white70,
+                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.indigo,
+                  backgroundColor: const Color.fromARGB(255, 35, 40, 70),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
@@ -158,7 +155,9 @@ class HomePage extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 40,
-                      backgroundImage: AssetImage("lib/assets/images/${artist.$2}"),
+                      backgroundImage: AssetImage(
+                        "lib/assets/images/${artist.$2}",
+                      ),
                     ),
                     const SizedBox(height: 6),
                     Text(
